@@ -73,7 +73,7 @@ class Example(commands.Cog):
     
 
 def setup(bot):
-    bot.add_cog(Fun(bot)) 
+    bot.add_cog(Example(bot)) 
 ```
 
 So if you had this `example.py` file, you could load this module using the command `h!load example` as described in `bot.py` without having to kill the entire script.
