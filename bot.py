@@ -9,20 +9,10 @@ from discord.ext.commands import Bot
 client = discord.Client()
 
 # quickstart the firestore database
-db = database.initdb()
+#db = database.initdb()
 
 # bot prefix, for eg h!hello
 bot = commands.Bot(command_prefix='h!')
-
-
-@bot.event
-async def on_ready():
-    '''
-    Prints next line to terminal after
-    establishing connnection to Discord's API.
-    '''
-    print('We have logged in as {0.user}'.format(bot))
-    await bot.change_presence(activity=discord.Game(name="HackClubBot | h!help"))
 
 
 @bot.command()
